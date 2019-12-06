@@ -1,0 +1,122 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 200px 0px 120px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+/*-----------------
+-----------------*/
+
+.blog .image-wrapper{
+    height: 600px;
+    width: 100%;
+}
+
+.blog .image-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog .content{
+    padding: 50px;
+}
+
+.blog .content h3{
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    position: relative;
+}
+
+.blog .content h3::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 2em;
+    background: var(--theme);
+    bottom: -10px;
+    transition: 1s;
+}
+
+.blog .content:hover  h3::before{
+    width: 4em;
+}
+
+.blog .content h6{
+    color: grey;
+    padding: 25px 0px;
+}
+
+.blog .content p{
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.blog .content a{
+    color: white;
+    padding: 10px 20px;
+    background: var(--second);
+    box-shadow: none;
+    border-radius: 0;
+    transition: 1s;
+}
+
+.blog .content a:hover{
+    background: var(--theme);
+}
+
+@media only screen and (max-width: 767px){
+    .blog .image-wrapper{
+        height: 300px;
+    }
+
+    .blog .content h3{
+        font-size: 21px;
+    }
+
+    .blog .content{
+        padding: 50px 20px;
+    }
+
+    .blog .content p{
+        font-size: 15px;
+    }
+}
+
+/*-----------------
+-----------------*/
+
+
+

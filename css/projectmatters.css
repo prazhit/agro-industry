@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.top{
+    padding: 120px 0px 0px 0px;
+   
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/*---------------------
+----------------------*/
+
+.top .one p{
+    font-family: var(--font-primary);
+    font-size: 55px;
+    color: var(--text-color);
+    margin: 5px;
+}
+
+
+.top .one h6{
+    font-size: 20px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-style: italic;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+
+.top .one h6::after{
+    content: '';
+    position: absolute;
+    background: var(--theme);
+    height: 3px;
+    width: 5em;
+    bottom: -20px;
+    left: 45%;
+}
+
+.top .one .pp{
+    font-size: 17px;
+    padding: 60px 200px 90px 200px;
+    line-height: 1.8em;
+    font-family: var(--font-secondary);
+}
+
+.top .one .pp strong{
+    font-style: italic;
+} 
+
+@media only screen and (max-width: 767px){
+    .top .one p{
+        font-size: 35px;
+    }
+
+    .top .one h6{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .top .one h6::after{
+        left: 42%;
+        width: 4em;
+    }
+
+    .top .one .pp{
+        padding: 50px 0px;
+        font-size: 16px;
+    }
+}
+
+/*---------------------
+----------------------*/
+
+.top .two h3{
+    font-family: var(--font-primary);
+    color: white;
+    font-style: italic;
+    transition: .3s;
+    position: absolute;
+}
+
+.two a{
+    text-decoration: none;
+}
+
+.two a:hover h3{
+    padding-bottom: 15px;
+}
+
+
+.two a::before{
+    transition: 1s;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.two a:hover::before{
+    background:rgba(0, 0, 0, 0.45);
+}
+
+
+.top .two .first{
+    background: url('../images/project1.jpg');
+    height: 500px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top .two .second{
+    background: url('../images/project7.jpg');
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top .two .third{
+    background: url('../images/project5.jpg');
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top .two .fourth{
+    background: url('../images/project6.jpg');
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top .two .fifth{
+    background: url('../images/project8.jpg');
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top .two .sixth{
+    background: url('../images/agriculture10.jpg');
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top .two .seventh{
+    background: url('../images/project10.jpg');
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

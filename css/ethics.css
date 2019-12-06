@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    /* --line: #5D8EC9; */
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 130px  0px 10px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*-----------------
+-----------------*/
+.display{
+    background: #EEEEEE;
+}
+
+.display .first p{
+    font-size: 23px;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.display .first h1{
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    position: relative;
+}
+
+.display .first h1::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    background: var(--theme);
+    width: 5.5em;
+    bottom: -15px;
+    left: 30%;
+}
+
+.display .rules{
+    padding: 70px;
+}
+
+.display .rules p{
+    font-size: 17px;
+    line-height: 1.8em;
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 767px){
+    .display .first p{
+        font-size: 17px;
+    }
+
+    .display .first h1{
+        font-size: 23px;
+    }
+
+    .display .rules{
+        padding: 70px 20px;
+    }
+    .display .rules p{
+        font-size: 15px;
+    }
+}
+/*--------------------
+---------------------*/
+
+.display .second{
+    padding: 70px;
+    background: white;
+    margin-bottom: -120px;
+}
+
+@media only screen and (max-width: 767px){
+    .display .second{
+        padding: 50px;
+        margin: 0px 20px;
+        margin-bottom: -110px;
+        float: left;
+    }
+}
+
+.display .second p{
+    color: var(--text-color);
+    font-size: 30px;
+    font-family: var(--font-primary);
+}
+
+.display .second span{
+    font-style: italic;
+}
+
+.display .second a{
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background: var(--second);
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none;
+    color: white;
+    transition: 1s;
+}
+
+.display .second a:hover{
+    background: var(--theme);
+}
+
+
+@media only screen and (max-width: 767px){
+    .display .second p{
+        font-size: 20px;
+    }
+
+    .display .second a{
+        font-size: 11px;
+    }
+}

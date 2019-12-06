@@ -1,0 +1,476 @@
+(function($) {
+
+
+
+  function openVideo (){
+         var $playButton = $('.play_btn'),
+         $body = $('body'),
+         $videoWrapper = $('.video_wrapper'),
+         $closeButton = $('.closingXWrapper'),
+         $videoIframe = $('#reshetVideo')[0],
+         $player = $f($videoIframe);
+                 
+        $playButton.on('click', function(event){
+                       event.preventDefault();
+            $videoWrapper.css({
+            "display" : "block"
+             });
+             $body.addClass('noscroll');
+             $player.api('play');
+        });
+
+        $closeButton.on('click', function(event){
+            event.preventDefault();
+            $videoWrapper.css({
+              "display" : "none"
+            });
+            $body.removeClass('noscroll');
+            $player.api('pause');
+        });
+}
+
+
+
+
+
+  function touchCheck() {
+                var $windowWidth = $(window).width();
+
+                 if (Modernizr.touch) {   
+                  $('.image-icon1').css({
+                    'background-attachment' : 'initial',
+                    'background-position' : 'center'
+                  });
+                  $('.image-icon2').css({
+                    'background-attachment' : 'initial',
+                    'background-position' : 'center'
+                  });
+                  $('.image-icon3').css({
+                    'background-attachment' : 'initial',
+                    'background-position' : 'center'
+                  });
+                  $('.image-icon4').css({
+                    'background-attachment' : 'initial',
+                    'background-position' : 'center'
+                  });
+
+                 }else { 
+                  if (!Modernizr.touch && $windowWidth > 1040) {
+                    stellalrIsActive = true;
+                     $.stellar({
+                       responsive:true,
+                       horizontalScrolling: false
+                      });
+                      setTimeout(function(){
+                        $.stellar('refresh');
+                      },1000);
+           
+
+                  }   
+               }
+   }
+
+   function killStellar() {
+
+                var $windowWidth = $(window).width();
+
+                 if ($windowWidth < 1040) {
+                  if (stellalrIsActive == true) {
+                         $(window).data('plugin_stellar').destroy();
+                         stellalrIsActive = false;
+                  }
+
+                  } else { 
+
+                    if (stellalrIsActive == false) {
+                    $.stellar({
+                      horizontalScrolling: false,
+                      responsive:true,
+                      verticalOffset: 0,
+                      horizontalOffset: 0
+                      });
+                                    
+                   $(window).data('plugin_stellar').init();
+                   stellalrIsActive = true;
+                  }
+                }
+    }
+
+
+    function fullHeight() {
+        var $windowHeight = $(window).height();
+        $('.main-banner').height($windowHeight);
+    }
+
+
+// ModalBox Opens
+
+    function modalBoxOpen($this) {
+
+         var $dataWindow = $this.attr('data-window'),
+         $modalWindow = $('#'+$dataWindow);
+
+         $('body').addClass('noscroll');
+
+         $modalWindow.fadeIn().addClass('active');
+         $('.close-modal').on('click',function(){
+            $modalWindow.fadeOut();
+            $('body').removeClass('noscroll');
+         });
+    }
+
+
+
+
+var stellalrIsActive = false;
+
+$(document).ready(function() {
+
+
+      $('.modalBoxOpen').on('click',function(e){
+       e.preventDefault();  
+
+       var $this = $(this);
+       modalBoxOpen($this);
+    });
+
+
+    var waypoint = new Waypoint({
+           element: $('.hidenav'),
+           handler: function(direction) {
+                  if(direction === 'down') {
+                    $('.btnbox').css({'display' : 'none'});
+
+                  }else {
+                    $('.btnbox').css({'display' : 'block'});
+                  }
+            }
+    });
+
+
+    $(window).on('resize', function(){
+                  Waypoint.refreshAll();
+                  killStellar();
+                   $.stellar('refresh');
+
+                  fullHeight();
+     });
+
+
+
+      $('.openNewsMovie, .openProjectVideo').on('click',function(e){
+             e.preventDefault();
+          
+             var $this = $(this),
+             $movieWindow = $('.news-movie-wrap'),
+             $movieID = $this.attr('data-movieID'),
+             $iframe = $movieWindow.find('iframe'),
+             $iframeSrc = "https://www.youtube.com/" + $movieID;
+
+              $movieWindow.fadeIn();
+              $('body').addClass('noscroll');
+              $iframe.attr('src', $iframeSrc);
+
+              $('.x-btnmovie').on('click',function(){
+
+                    $movieWindow.fadeOut();
+                    $('body').removeClass('noscroll');
+
+                    $iframe.attr('src', ' ');
+
+                    player.stopVideo();
+              });
+        });
+
+        $('#full-width-slider').royalSlider({
+              loop: true,
+              keyboardNavEnabled: true,
+              controlsInside: true,
+              imageScaleMode: 'fill',
+              arrowsNav:true,
+              arrowsNavAutoHide: true,
+              autoScaleSlider: false, 
+              autoHeight: false,
+              controlNavigation: 'bullets',
+              thumbsFitInViewport: false,
+              navigateByClick: true,
+              startSlideId: 0,
+              transitionType:'fade',
+              fadeinLoadedSlide:true,
+              transitionSpeed:600,
+              globalCaption: false,
+              imgWidth: 2000,
+              imgHeight: 1158,
+              autoPlay: {
+              enabled: true,
+              pauseOnHover: false,
+              delay: 3000
+              }
+       });
+
+       $('#map-slider').royalSlider({
+              loop: true,
+              keyboardNavEnabled: true,
+              controlsInside: true,
+              imageScaleMode: 'fill',
+              arrowsNav: true,
+              arrowsNavAutoHide: false,
+              autoScaleSlider: false, 
+              autoHeight: false,
+              controlNavigation: 'bullets',
+              thumbsFitInViewport: false,
+              navigateByClick: false,
+              startSlideId: 0,
+              slidesSpacing:0,
+              transitionType:'fade',
+              fadeinLoadedSlide:true,
+              transitionSpeed:600,
+              globalCaption: false,
+              imgWidth: 2000,
+              imgHeight: 1158,
+              autoPlay: {
+              enabled: false,
+              pauseOnHover: false,
+              delay: 3000
+              }
+         });
+
+         $('#solutions-slider1').royalSlider({
+              loop: true,
+              keyboardNavEnabled: true,
+              controlsInside: true,
+              imageScaleMode: 'fill',
+              arrowsNav:true,
+              arrowsNavAutoHide: true,
+              autoScaleSlider: false, 
+              autoHeight: false,
+              controlNavigation: 'bullets',
+              thumbsFitInViewport: false,
+              navigateByClick: false,
+              startSlideId: 0,
+              slidesSpacing:0,
+              transitionType:'fade',
+              fadeinLoadedSlide:true,
+              transitionSpeed:600,
+              globalCaption: false,
+              imgWidth: 2000,
+              imgHeight: 1158,
+              autoPlay: {
+              enabled: true,
+              pauseOnHover: false,
+              delay: 1000
+              }
+          });
+
+          $('#solutions-slider2').royalSlider({
+              loop: true,
+              keyboardNavEnabled: true,
+              controlsInside: true,
+              imageScaleMode: 'fill',
+              arrowsNav:true,
+              arrowsNavAutoHide: true,
+              autoScaleSlider: false, 
+              autoHeight: false,
+              controlNavigation: 'bullets',
+              thumbsFitInViewport: false,
+              navigateByClick: false,
+              startSlideId: 0,
+              slidesSpacing:0,
+              transitionType:'fade',
+              fadeinLoadedSlide:true,
+              transitionSpeed:600,
+              globalCaption: false,
+              imgWidth: 2000,
+              imgHeight: 1158,
+              autoPlay: {
+              enabled: true,
+              pauseOnHover: false,
+              delay: 7000
+              }
+          });
+
+          $('#smart-slider').royalSlider({
+              loop: true,
+              keyboardNavEnabled: true,
+              controlsInside: true,
+              imageScaleMode: 'fill',
+              arrowsNav:true,
+              arrowsNavAutoHide: false,
+              autoScaleSlider: false, 
+              autoHeight: false,
+              controlNavigation: 'bullets',
+              thumbsFitInViewport: false,
+              navigateByClick: false,
+              startSlideId: 0,
+              slidesSpacing: 0,
+              transitionType:'fade',
+              fadeinLoadedSlide:true,
+              transitionSpeed:600,
+              globalCaption: false,
+              imgWidth: 2000,
+              imgHeight: 1158,
+              autoPlay: {
+              enabled: false,
+              pauseOnHover: false,
+              delay: 7000
+              }
+         });
+
+
+      //function: events on smart page
+
+      $('.smart_openbox').on('click', function(){
+         var $smart_open = $('.smart_openbox');
+         
+             $smart_open.addClass('smartclick');
+             $smart_open.fadeOut(2000);
+             $(".burg").addClass('smartburg');
+             $(".header .btnbox h6").addClass('smartburg2');
+             $("#smart-slider").addClass('smart-slider-show');
+      });
+
+
+      //function: events on smart page
+
+              var slider = $("#smart-slider").data('royalSlider');
+
+              $(".s-btn").on('click',function(){
+                var slideNum = $(this).attr("data-changeSlide");
+                slider.goTo(slideNum);
+              });
+
+
+      //function: events on map
+
+              var slider2 = $("#map-slider").data('royalSlider');
+
+              $(".continentbtn").on('click',function(){
+                 var slideNum = $(this).attr("data-changeSlide");
+                 slider2.goTo(slideNum);
+              });
+
+
+fullHeight();
+openVideo();
+
+  $(window).load(function(){
+   touchCheck(); 
+  });
+//function: events on scroll down
+
+ $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            var $windowWidth = $(window).width();
+            var $overlayScreen = $('.overlay_screen');
+            $overlayScreen.hide();
+
+            if($windowWidth > 1040){
+                $('.navigation').removeClass('active-nav');
+                $('.btnbox h6').removeClass('h6-on');
+                $overlayScreen.removeClass('active');
+                $('.burg').removeClass('activeBurg');
+                $('.header .logobox .logo').removeClass('logo-none');
+                $('.back-box').removeClass('show-back-box');
+            }
+
+            if(scroll>=200) {
+               $('.header, .header2').addClass('header-toggle');
+               $('.header .logobox .logo').addClass('logo-position');
+               $('.header .btnbox').addClass('btn-position');
+               $('.navigation').addClass('active-nav2');
+
+
+            }else {
+               $('.header, .header2').removeClass('header-toggle');
+               $('.header .logobox .logo').removeClass('logo-position');
+               $('.header .btnbox').removeClass('btn-position');
+               $('.navigation').removeClass('active-nav2');
+            }
+  });
+
+//function: events on opening navigation
+
+      var $overlayScreen = $('.overlay_screen');
+      var $navBtn = $('.burg_box');
+      var $mobileNav = $('.mobile-nav');
+ 
+      $overlayScreen.hide();
+
+      $('.overlay_screen, .sideBtn').on('click', function(){
+                  var $windowWidth = $(window).width();
+
+           if ($overlayScreen.hasClass('active')){
+
+             $overlayScreen.hide().animate({opacity:0},500);
+             $overlayScreen.removeClass('active');
+             $('.burg').removeClass('activeBurg');
+             $('.navigation').removeClass('active-nav');
+             $('.btnbox h6').removeClass('h6-on');
+             $('.header .logobox .logo').removeClass('logo-none');
+             $('.header2 .logobox .logo').removeClass('logo-none');
+             $('.back-box').removeClass('show-back-box');
+             $('body').removeClass('noScroll');
+             
+           }else {
+            $overlayScreen.show().animate({opacity:1},500);
+            $overlayScreen.addClass('active');
+            $('.burg').addClass('activeBurg');
+            $('.navigation').addClass('active-nav');
+            $('.btnbox h6').addClass('h6-on');
+            $('.header .logobox .logo').addClass('logo-none');
+            $('.header2 .logobox .logo').addClass('logo-none');
+            $('.back-box').addClass('show-back-box');
+                if($windowWidth <1024){
+                  $('body').addClass('noScroll');
+                }
+
+           }
+      });
+
+
+
+  //home video
+    $('#responsiveVideo').fitVids();
+
+// slide to viewport
+
+      $.fn.visible = function(partial) {
+
+            var $t = $(this),
+                  $w = $(window),
+                  viewTop = $w.scrollTop(),
+                  viewBottom = viewTop + $w.height(),
+                  _top = $t.offset().top,
+                  _bottom = _top + $t.height(),
+                  compareTop = partial === true ? _bottom : _top,
+                  compareBottom = partial === true ? _top : _bottom;
+
+          return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+      };
+          
+      var win = $(window);
+      var allMods = $(".lr-module");
+
+      // Already visible modules
+      allMods.each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("already-visible"); 
+        } 
+      });
+
+      win.scroll(function(event) {
+        allMods.each(function(i, el) {
+                     var el = $(el);
+          if (el.visible(true)) {
+                el.addClass("come-in"); 
+          } 
+         });
+      });
+
+});
+
+
+    
+})(jQuery);

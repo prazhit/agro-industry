@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 100px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*-------------
+-------------*/
+
+.main{
+    background: var(--bg);
+}
+
+
+.main .one p{
+    font-size: 50px;
+    color: lightgrey;
+    font-family: var(--font-primary);
+    position: relative;
+}
+
+@media only screen and (max-width: 767px){
+    .main .one p{
+        font-size: 20px;
+    }
+    .main .one span{
+        font-size: 15px !important;
+    }
+}
+
+.main .one span{
+    font-size: 35px;
+    font-style: italic;
+}
+
+.main .one p::before{
+    content:'';
+    position: absolute;
+    bottom: -13%;
+    left: 40%;
+    height: 3px;
+    width: 20%;
+    background: var(--theme);
+}
+
+/*-------------
+-------------*/
+
+.main .two{
+    padding: 90px;
+}
+
+@media only screen and (max-width: 767px){
+    .main .two{
+        padding: 60px 20px;
+    }  
+}
+
+.main .two p{
+    color: lightgrey;
+    line-height: 1.8em;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 767px){
+    .main .two p{
+        font-size: 15px;
+    }
+}
+
+/*---------------
+--------------*/
+
+.main .three{
+    padding: 70px 0px;
+    min-height:400px;
+}
+
+.main .three .cd{
+    background: white;
+    padding: 80px; 
+}
+@media only screen and (max-width: 767px){
+
+    .main .three{
+        padding: 40px 0px;
+        min-height: 400px;
+    }
+
+    .main .three .cd{
+        padding: 60px 20px;
+    }
+}
+
+
+.main .cd h5{
+    font-size: 30px;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 13px;
+    font-family: var(--font-primary);
+} 
+
+@media only screen and (max-width: 767px){
+    .main .cd h5{
+        font-size: 20px;
+    }
+}
+
+.main .cd h5::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 15%;
+    background: var(--theme);
+}
+
+.main .cd p{
+    font-size: 16px;
+    color: var(--text-color);
+    padding-top: 20px;
+    font-family: var(--font-secondary);
+    
+}
+
+/*----------------
+----------------*/
+
+.main .ef{
+ width: 100%
+}
+
+.main .ef  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*------------------
+-----------------*/
+
+.main .gh{
+    background: var(--theme);
+    padding: 80px; 
+}
+@media only screen and (max-width: 767px){
+
+    .main .three{
+        min-height: 400px;
+    }
+
+    .main .three .gh{
+        padding: 60px 20px;
+    }
+}
+
+
+.main .gh h5{
+    font-size: 30px;
+    color: lightgray;
+    position: relative;
+    padding-bottom: 13px;
+    font-family: var(--font-primary);
+} 
+
+@media only screen and (max-width: 767px){
+    .main .gh h5{
+        font-size: 20px;
+    }
+}
+
+.main .gh h5::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 16%;
+    background: lightgray;
+}
+
+.main .gh p{
+    font-size: 16px;
+    color: lightgray;
+    padding-top: 20px;
+    font-family: var(--font-secondary);
+    
+}
+
+/*--------------
+--------------*/
+
+.main .four{
+    padding: 80px;
+    background: white;
+}
+
+@media only screen and (max-width: 767px){
+    .main .four{
+        padding: 50px;
+        margin: 0px 15px;
+    }
+}
+
+.main .four p{
+    color: var(--text-color);
+    font-size: 35px;
+    font-family: var(--font-primary);
+}
+
+.main .four span{
+    font-style: italic;
+}
+
+.main .four a{
+    margin: 10px 5px;
+    padding: 15px 15px;
+    background: var(--second);
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none;
+    color: white;
+    transition: 1s;
+}
+
+.main .four a:hover{
+    background: var(--theme);
+}
+
+
+@media only screen and (max-width: 767px){
+    .main .four p{
+        font-size: 20px;
+    }
+
+    .main .four a{
+        font-size: 11px;
+    }
+}

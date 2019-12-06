@@ -1,0 +1,282 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    /* --line: #5D8EC9; */
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 120px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*----------
+-------------*/
+.first{
+    padding: 0;
+    position: relative;
+}
+
+.first{
+    background: url('../images/finance.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+
+@media only screen and (max-width: 767px){
+    .first h1{
+        font-size: 35px;
+    }
+}
+/*---------------
+----------------*/
+
+
+.mainpart{
+    background: #EEEEEE;
+}
+
+.mainpart .second{
+    background: white;
+    padding: 90px;
+   margin-top: -100px;
+    min-height: 50px;
+}
+
+.mainpart .second p{
+    font-size: 23px;
+    color: var(--text-color);
+    line-height: 1.6em;
+    font-family: var(--font-primary);
+}
+
+.mainpart .second h6{
+    font-weight: lighter;
+    font-size: 16px;
+    position: relative;
+    font-family: var(--font-secondary);
+}
+
+.mainpart .second h6::before{
+    content:'';
+    background: var(--theme);
+    position: absolute;
+    height: 2px;
+    width: 15%;
+    bottom: -110%;
+}
+
+@media only screen and (max-width: 767px){
+    .mainpart .second p{
+        font-size: 18px;
+    }
+
+    .mainpart .second h6{
+        font-size: 14px;
+    }
+
+    .mainpart .second h6::before{
+        bottom: -50%;
+    }
+
+    .mainpart .second{
+        padding: 20px;
+        margin: -100px 20px 90px 20px; 
+    }
+}
+
+
+/*----------------
+---------------*/
+
+.mainpart .third{
+    padding: 80px;
+}
+
+.mainpart .third p{
+    font-size: 18px;
+    line-height: 1.8em;
+    font-family: var(--font-secondary);
+    padding-bottom: 35px;
+    color: var(--text-color);
+}
+
+.mainpart .third h5{
+    font-size: 30px;
+    font-family: var(--font-primary);
+    position: relative;
+    color: var(--text-color);
+}
+
+.mainpart .third h5::before{
+    content:'';
+    background: var(--theme);
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    bottom: -60%;
+}
+
+.mainpart .third .down{
+  padding-top: 30px;
+}
+
+.mainpart .third .down::before{
+    content:'';
+    background: var(--theme);
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    bottom: -30%;
+}
+
+.mainpart .third .up{
+    font-size: 18px;
+    line-height: 1.8em;
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    padding: 40px 0px 0px 0px;
+}
+
+.mainpart .third .col-md-6{
+    padding: 70px 70px 30px 70px;
+}
+
+.mainpart .third .col-md-6 h4{
+    font-family: var(--font-primary);
+    font-style: italic;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: var(--text-color);
+}
+
+/*----------------------
+---------------------*/
+
+.mainpart .fourth{
+    min-height: 50px;
+    background: white;
+    padding: 80px 0px;
+    margin-bottom: -150px;
+    float: left;
+  
+}
+
+.mainpart .fourth p{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+}
+
+.mainpart .fourth span{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.mainpart .fourth a{
+    text-decoration: none;
+    margin: 10px 5px;
+    padding: 12px 20px;
+    background: var(--second);
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none;
+    color: white;
+    transition: 1s;
+}
+
+.mainpart .fourth a:hover{
+    background: var(--theme);
+}
+
+@media only screen and (max-width: 767px){
+
+    .mainpart .third p{
+        font-size: 15px;
+        padding-bottom: 25px;
+    }
+    .mainpart .third{
+        padding: 5px 20px 40px 20px;
+    }
+
+    .mainpart .third h5{
+        font-size: 20px;
+    }
+
+    .mainpart .third h5::before{
+        bottom: -30%;
+    }
+
+    .mainpart .third .down::before{
+        bottom: -15%;
+    }
+
+    .mainpart .third .up{
+        font-size: 15px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .mainpart .third .col-md-6{
+        padding-top: 25px;
+    }
+
+    .mainpart .third .col-md-6 h4{
+        font-size: 16px;
+    }
+
+    .mainpart .fourth{
+        margin: 0px 20px -130px 20px;
+    }
+
+    .mainpart .fourth p{
+        font-size: 18px;
+    }
+
+    .mainpart .fourth span{
+        font-size: 18px;
+    }
+    .mainpart .fourth a{
+        font-size: 14px;
+    }
+    
+}
+/*-----------------
+----------------*/

@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 120px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.first{
+    padding: 0;
+    position: relative;
+}
+
+/*-------------
+-------------*/
+
+.first{
+    background: url('../images/agriculture2.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first2{
+    background: url('../images/project1.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nesele{
+    background: url('../images/nesele1.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.neselep2 ul,
+.neselep2 li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.neselep2 ul {
+  margin: 2em 0;
+}
+
+.neselep2 li {
+  margin: 1em;
+  margin-left: 3em;
+}
+
+.neselep2 li:before {
+  content: '\f192';
+  font-family: 'Font Awesome 5 Free';
+  float: left;
+  margin-left: -1.5em;
+  color: var(--theme) ;
+  font-weight:600px;
+}
+
+.first3{
+    background: url('../images/project2.jpeg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first4{
+    background: url('../images/project5.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first5{
+    background: url('../images/project6.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first6{
+    background: url('../images/project3.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first7{
+    background: url('../images/nova1.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.first .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.first2 .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.nesele .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first3 .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.first4 .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.first5 .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first6 .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.first7 .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+
+
+
+.first .text h6{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.first2 .text h6{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.nesele .text h6{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first3 .text h6{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.first4 .text h6{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.first5 .text h6{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first6 .text h6{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first7 .text h6{
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .first .text h1{
+        font-size: 25px;
+    }
+    .first2 .text h1{
+        font-size: 25px;
+    }
+    .first3 .text h1{
+        font-size: 25px;
+    }
+    .first4 .text h1{
+        font-size: 25px;
+    }
+    .first5 .text h1{
+        font-size: 25px;
+    }
+    .first6 .text h1{
+        font-size: 25px;
+    }
+    .first7 .text h1{
+        font-size: 25px;
+    }
+
+
+
+
+    .first .text h6{
+        font-size: 9px;
+    }
+    
+    .first2 .text h6{
+        font-size: 9px;
+    }
+    .first3 .text h6{
+        font-size: 9px;
+    }
+    .first4 .text h6{
+        font-size: 9px;
+    }
+    .first5 .text h6{
+        font-size: 9px;
+    }
+    .first6 .text h6{
+        font-size: 9px;
+    }
+    .first7 .text h6{
+        font-size: 9px;
+    }
+}   
+
+/*-------------------
+------------------*/
+
+.content .second{
+    padding: 0px 80px;
+}
+
+.content .second p{
+    font-size: 17px;
+    line-height: 1.8em;
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+}
+
+.content .second h4{
+    font-family: var(--font-primary);
+    position: relative;
+    padding: 25px 0px 0px 0px;
+}
+
+.content .second h4::before{
+    content: '';
+    position: absolute;
+    background: var(--theme);
+    height: 3px;
+    width: 5em;
+    bottom: -13px;
+}
+
+.content .second .col-md-12{
+    padding: 0;
+}
+
+.content .second .p1{
+    font-weight: 700;
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    padding: 30px 0px;
+    line-height: 1.8em;
+}
+
+.content .second .p2{
+    font-size: 17px;
+    line-height: 1.8em;
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    padding: 0px 0px 30px 0px;
+}
+
+.content .second .image-wrapper{
+    height: 550px;
+    width: 100%;
+    padding: 30px 0px;
+}
+.content .second .image-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content .second h5{
+    margin-bottom: 15px;
+    font-family: var(--font-primary);
+}
+
+@media only screen and (max-width: 767px){
+    .content .second{
+        padding: 0px 20px;
+    }
+    .content .second p{
+        font-size: 15.5px;
+    }
+
+    .content .second h4{
+        font-size: 20px;
+    }
+
+    .content .second .p1{
+        font-size: 15.5px;
+        padding: 25px 0px;
+    }
+
+    .content .second .p2{
+        font-size: 15.5px;
+        padding: 0px 0px 25px 0px;
+    }
+
+    .content .second .image-wrapper{
+        height: 250px;
+    }
+}
+
+/*----------------------
+------------------------*/
+
+.part2{
+    padding-bottom: 100px;
+}
+
+.part2 .third p{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    font-style: italic;
+    padding-bottom: 80px;
+}
+
+.part2 .fourth{
+    padding: 0px 30px;
+}
+
+.part2 .fourth h5{
+    position: absolute;
+    transition: .5s;
+    
+}
+
+.part2 .fourth h5::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 3em;
+    background: var(--theme);
+    bottom: -8px;
+    transition: 1.5s;
+}
+
+.part2 .fourth h5:hover::before{
+    width: 7em;
+}
+
+.part2 .fourth a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    transition: 1s;
+}
+
+.part2 .fourth a:hover h5{
+    color:white;
+}
+
+.part2 .fourth .one{
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    transition: 1s;
+    position: relative;
+    background:  url('../images/project4.jpg');background-size: cover;
+    opacity: 0;
+}
+
+.part2 .fourth a:hover .one{
+    opacity: 1;
+   
+} 
+
+
+
+.part2 .fourth .two{
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    transition: 1s;
+    position: relative;
+    background:  url('../images/project2.jpeg');
+    background-size: cover;
+    opacity: 0;
+}
+
+.part2 .fourth a:hover .two{
+    opacity: 1;
+   
+} 
+
+
+
+.part2 .fourth .three{
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    transition: 1s;
+    position: relative;
+    background:  url('../images/project3.jpg');
+    background-size: cover;
+    opacity: 0;
+}
+
+.part2 .fourth a:hover .three{
+    opacity: 1;
+   
+} 
+
+
+
+.part2 .fourth .four{
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    transition: 1s;
+    position: relative;
+    background:  url('../images/project9.jpg');
+    background-size: cover;
+    opacity: 0;
+}
+
+.part2 .fourth a:hover .four{
+    opacity: 1;
+   
+} 
+
+/*---------------
+---------------*/

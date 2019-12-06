@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 120px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*--------------------
+--------------------*/
+.first{
+    background: url('../images/letter.jpg');
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first .text h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+    position: relative;
+}
+
+.first .text h1::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 6em;
+    background: var(--theme);
+    bottom: -15px;
+    left: 27%;
+}
+
+@media only screen and (max-width: 676px){
+    .first .text h1{
+        font-size: 25px;
+    }
+  }
+
+
+/*------------------
+------------------*/
+
+.container{
+    padding: 120px 100px 90px 100px;
+    margin-top: -130px;
+    background: var(--bg);
+}
+
+.container p{
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    line-height: 1.8em;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 767px){
+    .container{
+        margin-top: -180px;
+        padding: 100px 20px 90px 20px;
+    }
+
+    .container p{
+        font-size: 15px;
+    }
+}
+/*--------------
+-------------*/
+.content .third{
+    margin-top: 100px;
+    min-height: 50px;
+    background: white;
+    padding: 80px 0px;
+    margin-bottom: -200px;
+    float: left;
+}
+
+.content .third p{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+}
+
+.content .third span{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.content .third a{
+    text-decoration: none;
+    margin: 10px 5px;
+    padding: 12px 20px;
+    background: var(--second);
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none;
+    color: white;
+    transition: 1s;
+}
+
+.content .third a:hover{
+    background: var(--theme);
+}
+
+@media only screen and (max-width: 767px){
+    .content .third{
+        margin: 100px 20px -160px 20px;
+    }
+
+    .content .third p{
+        font-size: 18px;
+    }
+
+    .content .third span{
+        font-size: 18px;
+    }
+
+    .content .third a{
+        font-size: 14px;
+    }
+}
+/*-----------------------
+-----------------------*/

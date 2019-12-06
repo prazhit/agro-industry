@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 150px 0px 30px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*--------------------
+--------------------*/
+
+.sustain{
+    background: #EEEEEE;
+}
+
+.sustain .first p{
+    font-size: 22px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.sustain .first h1{
+    font-size: 35px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    position: relative;
+}
+
+.sustain .first h1::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 5em;
+    background: var(--theme);
+    bottom: -15px;
+    left: 30%;
+}
+
+@media only screen and (max-width: 767px){
+    
+.sustain .first p{
+    font-size: 17px;
+}
+
+.sustain .first h1{
+    font-size: 22px;
+}
+}
+/*-------------
+-------------*/
+
+.sustain .second{
+    padding: 90px;
+}
+
+.sustain .second p{
+    font-family: var(--font-secondary);
+    font-size: 17px;
+    line-height: 1.8em;
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+
+.sustain .image-wrapper{
+    height: 500px;
+    width: 100%;
+}
+
+
+.sustain .image-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 767px){
+    .sustain .second{
+        padding: 50px 20px;
+    }
+
+    .sustain .second p{
+        font-size: 16px;
+    }
+
+    .sustain .image-wrapper{
+        height: 300px;
+    }
+}
+/*--------------
+---------------*/
+
+
+.sustain .third{
+    padding: 70px;
+    background: white;
+    margin-bottom: -140px;
+}
+
+@media only screen and (max-width: 767px){
+    .sustain .third{
+        padding: 50px;
+        margin: 0px 20px;
+        margin-bottom: -110px;
+        float: left;
+    }
+}
+
+.sustain .third p{
+    color: var(--text-color);
+    font-size: 30px;
+    font-family: var(--font-primary);
+}
+
+.sustain .third span{
+    font-style: italic;
+}
+
+.sustain .third a{
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background: var(--second);
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none;
+    color: white;
+    transition: 1s;
+}
+
+.sustain .third a:hover{
+    background: var(--theme);
+}
+
+
+@media only screen and (max-width: 767px){
+    .sustain .third p{
+        font-size: 20px;
+    }
+
+    .sustain .third a{
+        font-size: 11px;
+    }
+}

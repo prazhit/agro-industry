@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    /* --line: #5D8EC9; */
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 120px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*----------
+-------------*/
+.first{
+    padding: 0;
+    position: relative;
+}
+
+.first{
+    background: url('../images/adama3.jpg');
+    height: 700px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first h1{
+    font-size: 45px;
+    color: white;
+    font-family: var(--font-primary);
+}
+
+.first span{
+    font-size: 45px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+.first p{
+    font-size: 17px;
+    position: relative;
+    color: white;
+}
+.first p::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 10em;
+    background: var(--theme);
+    bottom: -10px;
+    left: 35%;
+}
+
+
+@media only screen and (max-width: 767px){
+    .first h1{
+        font-size: 22px;
+    }
+    .first span{
+        font-size: 22px;
+    }
+    .first p{
+        font-size: 15px;
+    }
+    .first p::before{
+        left: 25%;
+    }
+
+}
+/*---------------
+----------------*/
+
+.includes{
+    background: var(--bg);
+    padding: 0px 0px 10px 0px;
+}
+
+.includes .content{
+    background: white;
+    padding: 100px;
+    margin-top: -110px;
+}
+
+.includes .content h3{
+    font-family: var(--font-primary);
+    font-size: 26px;
+    position: relative;
+}
+
+.includes .content h3::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 5em;
+    background: var(--theme);
+    bottom: -13px;
+}
+
+.includes .content p{
+    font-size: 16px;
+    font-weight: 1.8em;
+    color: var(--text-color);
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 767px){
+
+    .includes .content{
+        padding: 70px 20px;
+    }
+
+    .includes .content h3{
+        font-size: 18px;
+    }
+
+    .includes .content p{
+        font-size: 14px;
+    }
+}
+/*---------------
+---------------*/
+
+.includes .content2 p{
+ color: lightgrey;
+ font-family: var(--font-primary);
+ font-size: 40px;
+ padding-top: 100px;
+}
+
+.includes .col-md-6{
+    padding: 50px;
+}
+
+.includes .col-md-6 h5{
+    font-family: var(--font-secondary);
+    color: lightgrey;
+    padding-top: 60px;
+    position: relative;
+    
+}
+
+.includes .col-md-6 h5::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--theme);
+    bottom: -15px;
+    transition: 1s;
+}
+.includes .col-md-6 h5:hover::before{
+    width: 8em;
+}
+
+
+@media only screen and (max-width: 767px){
+    .includes .content2 p{
+        padding-top: 80px;
+        font-size: 25px;
+    }
+
+    .includes .col-md-6 h5{
+        padding-top: 30px;
+
+    }
+}
+/*---------------
+-----------------*/
+
+.includes .fourth{
+    min-height: 50px;
+    background: white;
+    padding: 80px 0px;
+    margin-bottom: -150px;
+    float: left;
+    margin-top: 120px;
+  
+}
+
+.includes .fourth p{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+}
+
+.includes .fourth span{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.includes .fourth a{
+    text-decoration: none;
+    margin: 10px 5px;
+    padding: 12px 20px;
+    background: var(--second);
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none;
+    color: white;
+    transition: 1s;
+}
+
+.includes .fourth a:hover{
+    background: var(--theme);
+}
+
+@media only screen and (max-width: 767px){
+    .includes .fourth{
+        margin: 80px 20px -130px 20px;
+    }
+
+    .includes .fourth p{
+        font-size: 18px;
+    }
+
+    .includes .fourth span{
+        font-size: 18px;
+    }
+    .includes .fourth a{
+        font-size: 14px;
+    }
+    
+}
+/*---------------
+-----------------*/

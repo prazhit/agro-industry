@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    /* --line: #5D8EC9; */
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+html{font-size: 100%}
+@media screen and (max-width:500px){
+    html {font-size: 60%}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 200px 0px 120px 0;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.team{
+    background:#EEEEEE;
+}
+
+.team .first .image-wrapper{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.team .first .image-wrapper img{
+    height: 100%; 
+    width: 100%;
+    object-fit: cover;
+}
+
+.team .info p{
+    font-size: 17px;
+    font-family: var(--font-secondary);
+
+}
+.team .info span{
+    font-size: 23px;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.team .info{
+    background:white;
+    padding: 30px;
+    margin: -65px 45px 0px 45px;
+    position: absolute;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 425px){
+    .team .info{
+        margin: -80px 35px 0px 35px;
+    }
+}
+@media only screen and (width: 768px){
+    .team .info{
+        margin: -85px 35px 0px 35px;
+    }
+}
+
+.team .first .parag1{
+    padding: 10px;
+    font-size: 16px;
+    font-family: var(--font-secondary);
+    line-height: 1.8em;
+}
+@media only screen and (max-width: 600px){
+    .team .first .parag1{
+        margin-top: 90px;
+    }
+}
+
+
+.second {
+    margin-top: 90px;
+}
+.second  .card{
+    background: #EEEEEE;
+    border: none;
+}
+
+.second .card .card-img{
+    border-radius: 0;
+}
+
+.second .card .card-title,.card-text{
+    padding-left: 30px;
+}
+
+.second .card .card-text{
+    padding-top: 20px;
+}
+
+.second .card .card-title{
+    font-size: 20px;
+}
+.second .card .card-title span{
+    font-size: 25px;
+    font-style: italic;
+    font-family: var(--font-primary);
+}
+
+.second .card a{
+    margin-left: 30px;
+    /* border: 1px solid var(--second); */
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: hidden;
+    padding: 8px 15px;
+    color: white;
+    transition: 1s;
+    background: var(--second);
+  
+}
+
+.second .card a:hover{
+    background: var(--theme);
+}
+
+@media only screen and (max-width: 768px){
+    .second .card .card-title,.card-text{
+        padding-left: 5px;
+    }
+
+    .second .card a{
+        margin-left: 5px;
+    }
+
+    .second .card .card-title{
+        font-size: 15px;
+    }
+
+    .second .card .card-title span{
+        font-size: 20px;
+    }
+    .about .card .card-text{
+        font-size: 14px;
+    }
+}

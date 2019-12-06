@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    /* --line: #5D8EC9; */
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/*-------------
+-------------*/
+
+.first{
+    padding: 0;
+    position: relative;
+}
+
+
+.first{
+    background: url('../images/finance.jpg');
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first h1{
+    font-size: 50px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first p{
+    color: lightgrey;
+    font-size: 19px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.first span{
+    color: lightgrey;
+    font-style: initial;
+}
+
+.first p::before{
+    content: '';
+    position: absolute;
+    background: var(--theme);
+    height: 3px;
+    width: 9.5em;
+    bottom: -10px;
+
+}
+
+@media only screen and (max-width: 767px){
+    .first h1{
+        font-size: 25px;
+    }
+
+    .first p{
+        font-size: 16px;
+    }
+}
+/*--------------
+-------------*/
+
+.content{
+    background: #EEEEEE;
+}
+
+.container{
+    margin-top: -140px;
+}
+
+.content .second .col-md-6{
+    padding: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+.content .second .one{
+    border-right: none;
+}
+
+.content .second h1{
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    position: relative;
+}
+
+.content .second h1::before{
+    position: absolute;
+    content: '';
+    background: var(--theme);
+    height: 3px;
+    width: 2em;
+    bottom: -10px;
+}
+
+.content .second p{
+    font-size: 16px;
+    color: var(--text-color);
+    padding-top: 30px;
+}
+
+.content .second .two{
+    padding: 0;
+}
+
+@media only screen and (max-width: 767px){
+    .content .second .col-md-6{
+        border-right: none;
+    }
+    
+    .container{
+        margin-top: -190px;
+    }
+}
+/*----------------
+---------------*/
+
+.content .third{
+    margin-top: 100px;
+    min-height: 50px;
+    background: white;
+    padding: 80px 0px;
+    margin-bottom: -150px;
+    float: left;
+}
+
+.content .third p{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+}
+
+.content .third span{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.content .third a{
+    text-decoration: none;
+    margin: 10px 5px;
+    padding: 12px 20px;
+    background: var(--second);
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none;
+    color: white;
+    transition: 1s;
+}
+
+.content .third a:hover{
+    background: var(--theme);
+}
+
+@media only screen and (max-width: 767px){
+    .content .third{
+        margin: 100px 20px -130px 20px;
+    }
+
+    .content .third p{
+        font-size: 18px;
+    }
+
+    .content .third span{
+        font-size: 18px;
+    }
+
+    .content .third a{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,121 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    /* --line: #5D8EC9; */
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 120px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+.lineof{
+    padding: 0px !important;
+}
+
+.lineof h3{
+    font-size: 25px;
+    font-family: var(--font-primary);
+    font-style: italic;
+    color: white;
+    transition: .3s;
+}
+
+.lineof a{
+    text-decoration: none;
+}
+
+.lineof a::before{
+    transition: .5s;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.lineof a:hover::before{
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.lineof a:hover h3{
+    padding-bottom: 20px;
+}
+
+.lineof .first{
+    background: url('../images/agriculture.jpg');
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lineof .second{
+    background: url('../images/communication.jpg');
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lineof .third{
+    background: url('../images/health.jpg');
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lineof .fourth{
+    background: url('../images/energy.jpg');
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lineof .fifth{
+    background: url('../images/construction.png');
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lineof .sixth{
+    background: url('../images/water.png');
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 200px 0px 120px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*-------------
+--------------*/
+.blogexplain .topic{
+    padding: 0px 170px;
+}
+
+.blogexplain .topic h1{
+    font-size: 50px;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+} 
+
+.blogexplain .topic h6{
+    padding: 10px 0px 0px 0px;
+    position: relative;
+    font-family: var(--font-secondary);
+}
+
+.blogexplain .topic h6::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: var(--theme);
+    width: 4em;
+    bottom: -7px;
+}
+
+.blogexplain p{
+    padding: 35px 170px 0px 170px;
+    font-size: 17px;
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+}
+
+.blogexplain .two{
+    padding: 10px 170px 0px 170px;
+    font-size: 17px;
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+}
+
+.blogexplain .img-wrapper{
+    height: 500px;
+    width: 100%;
+    padding: 30px 130px;
+}
+
+.blogexplain .img-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 767px){
+
+    .commonpadding{
+        padding: 130px 0px 100px 0px;
+    }
+
+    .blogexplain .topic{
+        padding: 0px 20px;
+    }
+
+    .blogexplain .topic h1{
+    font-size: 25px;
+    }
+
+    .blogexplain p{
+        padding: 35px 20px 0px 20px;
+        font-size: 15px;
+}
+
+    .blogexplain .two{
+        padding: 10px 20px 0px 20px;
+        font-size: 15px;
+    }
+
+    .blogexplain .img-wrapper{
+        padding: 20px 20px;
+        height: 300px;
+    }
+}

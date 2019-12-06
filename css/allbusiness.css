@@ -1,0 +1,648 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+:root {
+    --bg: #181210;
+    --text-color: #37322F;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Lato', sans-serif;
+    --theme: green;
+    --second:#90C404;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.commonpadding{
+    padding: 120px 0px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/*----------
+-------------*/
+.first{
+    padding: 0;
+    position: relative;
+}
+
+.first{
+    background: url('../images/agriculture.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first1{
+    background: url('../images/communication.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first1 h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first2{
+    background: url('../images/construction.png');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first2 h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first3{
+    background: url('../images/energy.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first3 h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first4{
+    background: url('../images/health.jpg');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first4 h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+.first5{
+    background: url('../images/water.png');
+    height: 600px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.first5 h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--font-primary);
+    font-style: italic;
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .first h1{
+        font-size: 35px;
+    }
+
+    .first1 h1{
+        font-size: 30px;
+    }
+
+    .first2 h1{
+        font-size: 35px;
+    }
+
+    .first3 h1{
+        font-size: 35px;
+    }
+
+    .first4 h1{
+        font-size: 35px;
+    }
+
+    .first4 h1{
+        font-size: 35px;
+    }
+}
+
+/*----------
+-------------*/
+
+
+.maininfo{
+    background: var(--bg);
+}
+
+.maininfo .second{
+    background: white;
+    padding: 80px;
+    margin: -95px 10px 90px 10px;
+    min-height: 50px;
+}
+
+.maininfo .second p{
+    font-size: 23px;
+    color: var(--text-color);
+    line-height: 1.8em;
+    font-family: var(--font-primary);
+}
+
+.maininfo .second span{
+    font-style: italic;
+    font-weight: bold;
+    font-family: var(--font-primary);
+}
+
+.maininfo .second h6{
+    font-weight: lighter;
+    font-size: 16px;
+    position: relative;
+    font-family: var(--font-secondary);
+}
+
+.maininfo .second h6::before{
+    content:'';
+    background: var(--theme);
+    position: absolute;
+    height: 2px;
+    width: 15%;
+    bottom: -110%;
+}
+
+@media only screen and (max-width: 767px){
+    .maininfo .second p{
+        font-size: 18px;
+    }
+
+    .maininfo .second h6{
+        font-size: 14px;
+    }
+
+    .maininfo .second h6::before{
+        bottom: -50%;
+    }
+
+    .maininfo .second{
+        padding: 20px;
+        margin: -120px 20px 90px 20px; 
+    }
+}
+
+
+/*----------
+-------------*/
+
+
+.maininfo .third{
+    padding: 0px 60px;
+}
+
+.maininfo .third p{
+    font-size: 19px;
+    line-height: 1.8em;
+    color: grey;
+    font-family: var(--font-secondary);
+}
+
+.maininfo .third .image-wrapper{
+    height: 600px;
+    width: 100%;
+    padding-top: 60px;
+}
+.maininfo .third .image-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 767px){
+
+    .maininfo .third p{
+        font-size: 16px;
+    }
+    .maininfo .third{
+        padding: 0px 20px;
+    }
+    
+    .maininfo .third .image-wrapper{
+        height: 300px;
+    }
+}
+
+
+/*----------
+-------------*/
+
+
+.maininfo .fourth{
+    padding: 0px 60px;
+}
+
+.maininfo .fourth h5{
+    font-size: 45px;
+    padding-top: 3em;
+    color: lightgrey;
+    position: relative;
+   
+}
+
+.maininfo .fourth h5::before{
+    content: '';
+    background: var(--theme);
+    height: 3px;
+    width: 5em;
+    bottom: -10%;
+    position: absolute;
+}
+
+
+.maininfo .fourth .up{
+    padding-top: 90px;
+    color: lightgrey;
+    font-size: 20px;
+    font-style: italic;
+    font-family: var(--font-primary);
+    position: relative;
+ 
+  }
+
+  .maininfo .fourth .up::before{
+    transition: .7s;
+    content: '';
+    position: absolute;
+    bottom: -8%;
+    background: var(--theme);
+    height: 2px;
+    width: 0;
+}
+
+.maininfo .fourth .up:hover::before{
+    width: 15%;
+}
+
+.maininfo .fourth .up1{
+    padding-top: 30px;
+    color: lightgrey;
+    font-size: 20px;
+    font-style: italic;
+    font-family: var(--font-primary);
+    position: relative;
+}
+
+.maininfo .fourth .up1::before{
+    transition: .7s;
+    content: '';
+    position: absolute;
+    bottom: -12%;
+    background: var(--theme);
+    height: 2px;
+    width: 0;
+}
+
+.maininfo .fourth .up1:hover::before{
+    width: 15%;
+}
+
+
+.maininfo .fourth .down{
+    color: grey;
+    font-family: var(--font-secondary);
+}
+.maininfo .fourth .ok{
+    padding-bottom: 150px;
+}
+
+
+
+.maininfo .fourth .image-wrapper{
+    height: 600px;
+    width: 100%;
+    padding-top: 60px;
+}
+.maininfo .fourth .image-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+    .maininfo .fourth{
+        padding: 0px 20px;
+    }
+    .maininfo .fourth h5{
+        font-size: 25px;
+    }
+
+    .maininfo .fourth .image-wrapper{
+        height: 300px;
+    }
+}
+
+
+
+/*-------------
+--------------*/
+.description{
+    padding: 150px 0px;
+    background:#EEEEEE;
+}
+
+@media only screen and (max-width: 767px){
+    .description{
+        padding: 100px 0px;
+    }
+}
+
+.description .ab h1{
+    font-size: 40px;
+    font-family: var(--font-primary);
+    padding-bottom: 60px;
+}
+.description .ab h1 span{
+    font-style: italic;
+}
+
+@media only screen and (max-width: 767px){
+    .description .ab h1{
+        font-size: 20px;
+    }
+}
+
+/*---------------------
+------------------*/
+
+.description .one{
+    padding: 70px 0px;
+    min-height:400px;
+}
+
+.description .one .cd{
+    background: white;
+    padding: 80px; 
+}
+@media only screen and (max-width: 767px){
+
+    .description .one{
+        padding: 40px 0px;
+        min-height: 400px;
+    }
+
+    .description .one .cd{
+        padding: 60px 20px;
+    }
+}
+
+
+.description .cd h5{
+    font-size: 30px;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 13px;
+    font-family: var(--font-primary);
+} 
+
+@media only screen and (max-width: 767px){
+    .description .cd h5{
+        font-size: 20px;
+    }
+}
+
+.description .cd h5::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 15%;
+    background: var(--theme);
+}
+
+.description .cd p{
+    font-size: 16px;
+    color: var(--text-color);
+    padding-top: 20px;
+    font-family: var(--font-secondary);
+    
+}
+
+/*----------------
+----------------*/
+
+.description .ef{
+ width: 100%
+}
+
+.description .ef  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*------------------
+-----------------*/
+
+.description .gh{
+    background: var(--text-color);
+    padding: 80px; 
+}
+@media only screen and (max-width: 767px){
+
+    .description .one{
+        min-height: 400px;
+    }
+
+    .description .one .gh{
+        padding: 60px 20px;
+    }
+}
+
+
+.description .gh h5{
+    font-size: 30px;
+    color: lightgray;
+    position: relative;
+    padding-bottom: 13px;
+    font-family: var(--font-primary);
+} 
+
+@media only screen and (max-width: 767px){
+    .description .gh h5{
+        font-size: 20px;
+    }
+}
+
+.description .gh h5::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 16%;
+    background: var(--theme);
+}
+
+.description .gh p{
+    font-size: 16px;
+    color: lightgray;
+    padding-top: 20px;
+    font-family: var(--font-secondary);
+    
+}
+
+/*----------------------
+-------------------*/
+
+
+.description .ij{
+    padding: 90px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 767px){
+    .description .ij{
+        padding: 60px 20px;
+    }
+}
+
+@media only screen and (width: 768px){
+    .description .ij{
+        padding: 50px 20px;
+    }
+}
+
+.description .ij h5{
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 13px;
+    font-family: var(--font-primary);
+}
+
+@media only screen and (max-width: 767px){
+    .description .ij h5{
+        font-size: 22px;
+    }
+}
+
+.description .ij h5::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 10%;
+    background: var(--theme);
+
+}
+
+.description .ij p{
+    font-size: 16px;
+    color: var(--text-color);
+    padding-top: 20px;   
+    font-family: var(--font-secondary);
+}
+
+.description .box{
+    height: 450px;
+    width: 100%;
+}
+.description .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px){
+    .description .box{
+        height: 220px;
+    }
+} 
+ 
+/*---------------------------
+------------------------*/
+
+.description .two{
+    background: white;
+    padding: 60px 0px;
+    margin-bottom: -300px;
+    float: left;
+}
+
+@media only screen and (max-width: 767px){
+    .description .two{
+        margin: 0px 10px; 
+    }
+}
+
+.description .two p{
+    font-size: 22px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    
+}
+
+.description .two span{
+    font-style: italic;
+}
+
+.description .two .buttons a{
+    margin: 10px 5px;
+    padding: 12px 30px;
+    background: var(--second);
+    border-radius: 0;
+    font-weight: 500;
+    box-shadow: none;
+    color: white;
+    transition: 1s;
+}
+
+.description .two .buttons a:hover{
+    background: var(--theme);
+}
+
+/*---------------
+---------------*/
